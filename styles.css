@@ -1,0 +1,175 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'poppins', sans-serif;
+    background-color: #0F0F0F
+    ;
+}
+
+
+/* typography */
+
+
+select{
+    font-family: 'poppins', sans-serif;
+}
+
+h1{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 1.5em;
+}
+
+/* Choose color scheme */
+
+
+#which-color{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60px 1fr 1fr;
+    grid-template-areas: 
+        "col sch btn";
+    gap: .75rem;
+    padding: 20px 10px;
+    min-width: 240px;
+    box-sizing: border-box;
+}
+
+.color-selecter{
+    background-color: #272727;
+    grid-area: col;
+    height: 3rem;
+    width: 60px;
+}
+
+.scheme-selecter{
+    grid-area: sch;
+    height: 2.625rem;
+    width: 100%;
+    color: white;
+    background-color: #0F0F0F;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+}
+
+.btn{
+    grid-area: btn;
+    height: 2.625rem;
+    font-size: .85rem;
+    width: 100%;
+    color: white;
+    background-color: #0F0F0F;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+}
+
+/* color schemes */
+
+.color-schemes{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    height: calc(100vh - 62px);
+    grid-template-areas: 
+        "one"    
+        "two"
+        "tre"
+        "for"
+        "fiv" ;
+}
+
+
+.color-1{
+    grid-area: one;
+    background-color: #F55A5A;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.color-2{
+    grid-area: two;
+    background-color: #2B283A;
+    display: flex;
+    align-items: center;
+    color: whitesmoke
+}
+.color-3{
+    grid-area: tre;
+    background-color: #FBF3AB;
+    display: flex;
+    align-items: center;
+}
+.color-4{
+    grid-area: for;
+    background-color: #AAD1B6;
+    display: flex;
+    align-items: center;
+}
+.color-5{
+    grid-area: fiv;
+    background-color: #A626D3;
+    display: flex;
+    align-items: center;
+}
+
+/* media-quries */
+
+@media (min-width: 768px){
+    .color-schemes{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+            "one two tre for fiv"
+            "one two tre for fiv"
+            "one two tre for fiv"
+            "one two tre for fiv"
+            "one two tre for fiv"
+    }
+
+    .color-1{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .color-2{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .color-3{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .color-4{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .color-5{
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: clamp(1.3rem, 2vw, 2.5rem);
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+
+    .btn{
+        font-size: 1rem;
+    }
+
+    select{
+        font-size: 1rem;
+    }
+
+    #which-color{
+        grid-template-columns: 80px 1fr 1fr;
+        padding: 30px 15px;
+    }
+
+    .color-selecter{
+        width: 80px;
+    }
+}
+
+
