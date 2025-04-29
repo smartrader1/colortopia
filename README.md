@@ -10,7 +10,7 @@ This tool fetches an api from https://www.thecolorapi.com/ (its free & doesn't n
 
 1. Clone this repository or download the files
 2. Open `index.html` in your web browser
-3. Alternatively, visit the live demo: 
+3. Alternatively, visit the live demo: https://colortopia-1.netlify.app/
 
 ## Features
 
